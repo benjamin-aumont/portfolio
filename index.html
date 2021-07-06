@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Benjamin Aumont</title>
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="topof">
+    <header>
+        <h1>Benjamin Aumont</h1>
+        <div class="container">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="style/logo.jpg">
+                </div>
+                <div class="content">
+                    <p>Développeur Fullstack</p>
+                </div>
+            </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#projet">Travaux réalisés</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div>
+  <h2>Travaux réalisés</h2>
+</div>
+    <section id="projet">
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="style/restaurant.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="style/annonce.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="style/python.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="style/android.png" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+    </section>
+    <!--competences-->
+    <section id="competences"></section>
+    <div class="compben">
+        <h2>Compétences</h2>
+        <h3>Web</h3>
+        <h4>
+          HTML <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h4>CSS <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h4>Javascript <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h4>Node JS <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h4>PHP <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h3>Back End</h3>
+        <h4>Java <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        <h4>C# <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dotwhite"></span>
+        </h4>
+        
+    </div>
+    </section>
+    <!--contact-->
+    <section id="contact"></section>
+    <div class="contactben">
+        <h2>Contact</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/benjamin-aumont-839b7418a/"><img class="icon" src="style/linkedin.png"></a>
+        <a href="https://github.com/benjamin-aumont"><img class="icon" src="style/github.png"></a>
+        <a href="mailto: benjaminaumont@yahoo.fr"><img class="icon" src="style/yahoo.png"></a>
+      </p>
+    </div>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
+        <footer>
+            <p>&copy; 2021 - Tout droits réservés</p>
+        </footer>
+</body>
+</html>

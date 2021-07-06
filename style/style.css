@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #373737;
+    color: floralwhite; 
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color:mediumaquamarine;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+
+}
+
+
+.nav{
+    margin: 2em 0 0;
+    font-size: 1.35em;
+    text-align: center;
+}
+
+nav.nav ul li{
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+nav.nav ul li a{
+    display: inline-block;
+    margin: 0.5em;
+    border-width: 1px 0;
+    border-style: solid;
+    padding: 0.35em;
+    min-width: 120px;
+    font-family: 'Lustria', 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+    color: mediumaquamarine;
+
+}
+
+.topof{
+    height: 42em;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+section#projet{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    left: 0; 
+    right: 0;
+}
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+}
+
+.container .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(400px at center 100px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.container .box:hover .imgBx{
+    clip-path: circle(80px at center 100px);
+    transition-delay: 0s;
+}
+
+.container .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}
+
+.container .box .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+
+.container .box .content p
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+
+.container .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.7s
+}
+
+h2{
+    text-align: center;
+    color: mediumaquamarine;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 2em;
+}
+
+.icon {
+  width: 40px;
+}
+
+.contactben{
+  margin: 0 auto;
+}
+
+p{
+  text-align: center;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color:mediumaquamarine;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotwhite{
+  height: 25px;
+  width: 25px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+h3,h4{
+  font-family: 'Lustria', 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+  text-align: center;
+}
+
