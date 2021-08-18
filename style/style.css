@@ -175,7 +175,9 @@ footer {
 
 .container{
     position: relative;
-    width: 1200px;
+    width: 100%;
+    float: none;
+    clear: both;
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
