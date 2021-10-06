@@ -41,7 +41,7 @@ nav.nav ul li a{
 }
 
 .topof{
-    height: 42em;
+    min-height: 100vh;
 }
 
 .slider{
